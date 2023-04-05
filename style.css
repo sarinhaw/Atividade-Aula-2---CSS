@@ -1,0 +1,118 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* todo o container vai obedecer essas 3 "regrinhas" */
+
+}
+
+/* começo do header */
+
+.header {
+    width: 100%;
+    background-color: black;
+    border-bottom: solid aqua 3px;
+    /* para a borda ficar somente em baixo */
+}
+
+.header .container {
+    /* quero mudar exatamente o container que esta dentro do meu header */
+    justify-content: space-between;
+    /* sempre alinha na horizontal */
+    align-items: center;
+    /* para deixar a logo alinhada com a naveBar */
+}
+
+.logo {
+    color: aqua;
+}
+
+.naveBar {
+    width: 300px;
+    justify-content: space-evenly;
+    display: flex;
+    color: darkorange;
+    list-style: none;
+}
+
+a {
+    /* para tirar a estilizacao que vem quando transformamos em link */
+    text-decoration: none;
+    color: darkorange;
+
+
+}
+
+/* fim do header */
+/* começo do banner */
+
+.banner {
+    background-size: cover;
+    /* para nao repetir a imagem mas que mesmo assim ele siga o tamanho da minha div */
+    background-image: url(../img/bg-jelly-fish-para_outras_pags.png);
+    width: 100%;
+    height: 450px;
+
+}
+
+p {
+    margin: 0;
+}
+
+.banner .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner .container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 25px;
+    width: 200px;
+}
+
+p span {
+    font-weight: 800;
+}
+
+/* fim do banner */
+/* começo do social */
+
+.social {
+    background-color: #cdcdcd;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.social .container {
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card h4 {
+    color: #d7427d;
+}
+
+.card p {
+    text-align: left;
+}
